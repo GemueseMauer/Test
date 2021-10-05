@@ -58,5 +58,4 @@ Attention: the names, which depends on your train settings, of **MODEL_WEIGHTS**
 cd tasks/
 python3 torch2trt.py
 ```
-# Test
-# test
+
