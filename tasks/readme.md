@@ -8,15 +8,16 @@
 ### Annotation Tool
 As for the annotation tool used in keypoints-annotation, the usage of **coco-annotator** will be shown as followings. By the way, the **coco-annotator** doesn't work on the jetson devices. So if you want to install **coco-annotator** on a new device, it should be a not-jetson device.
 ##### Installation of **coco-annotator** (ignore when you have already this tool)
-Go to the link below to see details:
-> https://github.com/jsbroks/coco-annotator
+1. download the coco-annotator
 ```
 git clone https://github.com/jsbroks/coco-annotator.git
 ```
+Go to the link below to see more details:
+> https://github.com/jsbroks/coco-annotator
 Before running **coco-annotator**, make sure that you have **docker** in your device.
 More information about **docker** > https://docs.docker.com/engine/install/ubuntu/
 ##### run **coco-annotator**
-1. open coco-annotator
+2. open coco-annotator
 ```
 # open in the Terminal
 cd /home/jetson/QingrongGUO/DataPreparation/coco-annotator
@@ -27,7 +28,7 @@ The next step is to open a Browser and go to the localhost.
 The login homepage looks like the shown picture.
 The default Username and password are **probility** and **jetson**.
 ![Login Page Of COCO-Annotator](https://github.com/GemueseMauer/test/blob/main/pic/Login_COCO-Annotator.png)
-2. create new dataset folder in coco-annotator
+3. create new dataset folder in coco-annotator
 After logining in the page, you can see the green button **Create**. Clicking this green button, you are going to set up the information for the new folder (new dataset)(see picture).
 ![Create a Dataset](https://github.com/GemueseMauer/test/blob/main/pic/CreateADataset.png)
     1. You can type anything you want in the block **Dataset Name**. This Dataset Name will be the name of the new folder to be created.
@@ -42,7 +43,7 @@ After logining in the page, you can see the green button **Create**. Clicking th
     ```
     6. Place all the images you want to annotate into the folder (eg. into folder **Test**)
     7. Refresh the localhost page by clicking the **refresh button of the browser** or **grey button "Refresh"** near the **green button "Create"**
-3. annotate the images
+4. annotate the images
 since all the preparation before annotation has been done, it is time to use coco-annotator to do the annotation work.
     1. Click the dataset you created in the localhost in the browser (eg. **Test**). Then you will go to the similar interface where you can find the basic functions of the coco-annotator and all the images you placed in the local folder (s. picture below)
     ![Dataset Test Starting Page](https://github.com/GemueseMauer/test/blob/main/pic/annotation%20example1.png)
