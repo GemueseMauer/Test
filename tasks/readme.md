@@ -21,11 +21,10 @@ More information about **docker** > https://docs.docker.com/engine/install/ubunt
 cd /home/jetson/QingrongGUO/DataPreparation/coco-annotator
 sudo docker-compose up
 ```
-The next step is to open a Browser and go to the localhost.
-> localhost:5000/
+
+The next step is to open a Browser and go to the localhost. > localhost:5000/
 The login homepage looks like the shown picture.
-The default Username and password are **probility** and **jetson**.
-![Login Page Of COCO-Annotator](https://github.com/GemueseMauer/test/blob/main/pic/Login_COCO-Annotator.png)
+The default Username and password are **probility** and **jetson**. ![Login Page Of COCO-Annotator](https://github.com/GemueseMauer/test/blob/main/pic/Login_COCO-Annotator.png)
 ### 3. create new dataset folder in coco-annotator
 + After logining in the page, you can see the green button **Create**. Clicking this green button, you are going to set up the information for the new folder (new dataset)(see picture). ![Create a Dataset](https://github.com/GemueseMauer/test/blob/main/pic/CreateADataset.png)
     - You can type anything you want in the block **Dataset Name**. This Dataset Name will be the name of the new folder to be created.
