@@ -4,6 +4,34 @@
 ---
 
 ## Part 1 -- Data preparation
+### Annotation Tool
+As for the annotation tool used in keypoints-annotation, the usage of *coco-annotator* will be shown as followings.
+#### run *coco-annotator*
+```
+# open in the *Terminal*
+cd /home/jetson/QingrongGUO/Data preparation/coco-annotator
+sudo docker-compose up
+```
+The next step is to open a Browser and go to the localhost.
+> localhost:5000/
+
+The login homepage looks like the shown picture.
+The default Username and password are ***probility*** and ***jetson***.
+![Login_COCO-Annotator]("/home/jetson/Pictures/Login_COCO-Annotator.png")
+
+"add folder" in the website and "add pictures" in the local folder
+
+Then you can annotate the objects in images in the form you want like bounding box or keypoints.
+When the annotation has been done, then the annotation file in json format can be exported and saved.
+
+The json annotation file and the images are to be used for training. Before training the data needs to be preprocessed.
+
+After use of the ***coco-annotator*** then run the codes below in the same Terminal or click the button ***ctrl + C*** to end the service.
+```
+sudo docker-compose down
+```
+
+### Data preprocessing
 ![Photo Name]("Photo Path")
 
 '''
