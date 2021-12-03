@@ -43,13 +43,13 @@ After logining in the page, you can see the green button **Create**. Clicking th
     7. Refresh the localhost page by clicking the **refresh button of the browser** or **grey button "Refresh"** near the **green button "Create"**
 ##### 4. annotate the images
 since all the preparation before annotation has been done, it is time to use coco-annotator to do the annotation work.
-    1. Click the dataset you created in the localhost in the browser (eg. **Test**). Then you will go to the similar interface where you can find the basic functions of the coco-annotator and all the images you placed in the local folder (s. picture below)
-    ![Dataset Test Starting Page](https://github.com/GemueseMauer/test/blob/main/pic/annotation%20example1.png)
-    2. Click one image and begin to annotate. The annotation details you could search by yourself. It is recommened to click "save" each time one sinlge image has been annotated. By the way, more than one objects and one categories can also be annotated. More tools including **Bounding box** and **Keypoints** can be used in the same time. (s. picture below)
-    ![Annotate one image](https://github.com/GemueseMauer/test/blob/main/pic/annotate_image.png)
-    3. If all the images are annotated, go back to the **Dataset Test Starting Page** in the 1. Step and click the **grey button "Export COCO"** on the left side of the page. It only needs clicking **"Export" button** after you see the Export window (eg. "Export Test")
-    4. Download the json annotation file in **"Exports"** in the same page by clicking the **green button "Download"** (s. picture below)
-    ![Export and download](https://github.com/GemueseMauer/test/blob/main/pic/Export.png)
+   1. Click the dataset you created in the localhost in the browser (eg. **Test**). Then you will go to the similar interface where you can find the basic functions of the coco-annotator and all the images you placed in the local folder (s. picture below) 
+   ![Dataset Test Starting Page](https://github.com/GemueseMauer/test/blob/main/pic/annotation%20example1.png)
+   2. Click one image and begin to annotate. The annotation details you could search by yourself. It is recommened to click "save" each time one sinlge image has been annotated. By the way, more than one objects and one categories can also be annotated. More tools including **Bounding box** and **Keypoints** can be used in the same time. (s. picture below) 
+   ![Annotate one image](https://github.com/GemueseMauer/test/blob/main/pic/annotate_image.png)
+   3. If all the images are annotated, go back to the **Dataset Test Starting Page** in the 1. Step and click the **grey button "Export COCO"** on the left side of the page. It only needs clicking **"Export" button** after you see the Export window (eg. "Export Test")
+   4. Download the json annotation file in **"Exports"** in the same page by clicking the **green button "Download"** (s. picture below) 
+   ![Export and download](https://github.com/GemueseMauer/test/blob/main/pic/Export.png)
 After use of the ***coco-annotator*** click the button ***ctrl + C*** in the same Terminal to end the service. The json annotation file and the images are to be used for training. Before training the data needs to be preprocessed.
 
 ### Data preprocessing
