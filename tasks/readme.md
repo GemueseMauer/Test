@@ -1,6 +1,5 @@
 # Instruction of Data preparation and Training for trtpose
 ***Author: Qingrong Guo***
-
 ***Date: 2021.12.03***
 ---
 
