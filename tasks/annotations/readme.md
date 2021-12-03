@@ -5,10 +5,10 @@
 
 ## Part 1 -- Data preparation
 ### Annotation Tool
-As for the annotation tool used in keypoints-annotation, the usage of *coco-annotator* will be shown as followings.
+As for the annotation tool used in keypoints-annotation, the usage of ***coco-annotator*** will be shown as followings.
 #### run *coco-annotator*
 ```
-# open in the *Terminal*
+# open in the Terminal
 cd /home/jetson/QingrongGUO/Data preparation/coco-annotator
 sudo docker-compose up
 ```
@@ -17,6 +17,7 @@ The next step is to open a Browser and go to the localhost.
 
 The login homepage looks like the shown picture.
 The default Username and password are ***probility*** and ***jetson***.
+
 ![Login_COCO-Annotator]("/home/jetson/Pictures/Login_COCO-Annotator.png")
 
 "add folder" in the website and "add pictures" in the local folder
