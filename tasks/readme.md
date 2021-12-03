@@ -26,9 +26,9 @@ AlignL|AlignCT|AlignR
 
 1. This is an ordered list
 2. This is an ordered list
-  2.1 This is an ordered list
-  2.2 This is an ordered list
-  2.3 This is an ordered list
+   2.1 This is an ordered list
+   2.2 This is an ordered list
+   2.3 This is an ordered list
 3. This is an ordered list
 
 ## Part 2 -- Training
