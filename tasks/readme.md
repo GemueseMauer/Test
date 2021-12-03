@@ -33,7 +33,7 @@ AlignL|AlignCT|AlignR
 
 ## Part 2 -- Training
 
-'''
+```
 {'checkpoints': {'interval': 3},
  'color_jitter': {'brightness': 0.05,
                   'contrast': 0.05,
@@ -76,4 +76,4 @@ AlignL|AlignCT|AlignR
                   'num_workers': 8,
                   'pin_memory': True,
                   'shuffle': True}}
-'''
+```
