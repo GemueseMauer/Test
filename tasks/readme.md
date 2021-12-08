@@ -26,7 +26,7 @@ The next step is to open a Browser and go to the localhost:5000.
 The login homepage looks like the shown picture.
 The default Username and password are **probility** and **jetson**. ![Login Page Of COCO-Annotator](https://github.com/GemueseMauer/test/blob/main/pic/Login_COCO-Annotator.png)
 ### 3. create new dataset folder in coco-annotator
-+ After logining in the page, you can see the green button **Create**. ![Homepage](https://github.com/GemueseMauer/test/blob/main/pic/Create_Dataset.png) Clicking this green button, you are going to set up the information for the new folder (new dataset) (see picture). ![Create a Dataset](https://github.com/GemueseMauer/test/blob/main/pic/CreateADataset.png)
++ After logining in the page, you can see the green button **Create**. ![Homepage](https://github.com/GemueseMauer/test/blob/main/pic/Create_Dataset.png) Clicking this green button, you are going to initial the settings for the new folder (new dataset) (see picture). ![Create a Dataset](https://github.com/GemueseMauer/test/blob/main/pic/CreateADataset.png)
     - You can type anything you want in the block **Dataset Name**. This Dataset Name will be the name of the new folder to be created.
     - Click the block of **Default Categories** to add a category. If you use the laptop of insitute, there is already an available category, namely **forklift** in blue. Click the button **forklift** in blue, this available category will be added automatically in the block. As for adding new categories, you can find **Categories** on the top of the same page. After clicking **Categories** you can create your own new categories.
     - The **Folder Directory** shows the path of the new dataset and can't be edited.
@@ -36,11 +36,11 @@ The default Username and password are **probility** and **jetson**. ![Login Page
     ![localhost page Test](https://github.com/GemueseMauer/test/blob/main/pic/Test_Dataset_cocoannotator.png)
 
     local folder:
-    
+
     ![local folder Test](https://github.com/GemueseMauer/test/blob/main/pic/Test_Folder_cocoannotator.png)
     - Normally the created local folder is locked and needs to be unlocked. To unlock the folder, run followins codes in the terminal. And then check whether the folder is unlock.
     ```
-    sudo chmod 777 Test
+    sudo chmod 777 Your_Dataset_Name
     ```
     - Place all the images you want to annotate into the folder (eg. into folder **Test**)
     - Refresh the localhost page by clicking the **refresh button of the browser** or **grey button "Refresh"** near the **green button "Create"**
@@ -53,7 +53,7 @@ The default Username and password are **probility** and **jetson**. ![Login Page
     - If all the images are annotated, go back to the **Dataset Test Starting Page** in the 1. Step and click the **grey button "Export COCO"** on the left side of the page. It only needs clicking **"Export" button** after you see the Export window (eg. "Export Test")
     - Download the json annotation file in **"Exports"** in the same page by clicking the **green button "Download"** (s. picture below) 
     ![Export and download](https://github.com/GemueseMauer/test/blob/main/pic/Export.png)
-After use of the ***coco-annotator*** click the button ***ctrl + C*** in the same Terminal to end the service. The json annotation file and the images are to be used for training. Before training the data needs to be preprocessed.
+After use of the ***coco-annotator*** click the button ***ctrl + C*** in the same Terminal to end the service. The json annotation file and the images are to be used for training. Before training a model the data needs to be preprocessed.
 
 ### Data preprocessing
 ![Photo Name]("Photo Path")
