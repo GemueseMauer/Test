@@ -1,6 +1,6 @@
 # Instruction of Data preparation and Training for trtpose
 ***Author: Qingrong Guo***
-***Date: 2021.12.09***
+***Date: 2021.12.03***
 ***Device: Laptop of the Institute***
 ---
 
@@ -39,18 +39,18 @@ The default Username and password are **probility** and **jetson**. ![Login Page
 
     ![local folder Test](https://github.com/GemueseMauer/test/blob/main/pic/Test_Folder_cocoannotator.png)
     - Normally the created local folder is locked and needs to be unlocked. To unlock the folder, run followins codes in the terminal. And then check whether the folder is unlock.
-        ```
-        sudo chmod 777 Your_Dataset_Name
-        ```
+    ```
+    sudo chmod 777 Your_Dataset_Name
+    ```
     - Place all the images you want to annotate into the folder (eg. into folder **Test**)
     - Refresh the localhost page by clicking the **refresh button of the browser** or **grey button "Refresh"** near the **green button "Create"**
 ### 4. annotate the images
 + since all the preparation before annotation has been done, it is time to use coco-annotator to do the annotation work.
     - Click the dataset you created in the localhost in the browser (eg. **Test**). Then you will go to the similar interface where you can find the basic functions of the coco-annotator and all the images you placed in the local folder (s. picture below) 
     ![Dataset Test Starting Page](https://github.com/GemueseMauer/test/blob/main/pic/annotation%20example1.png)
-    - Click one image and begin to annotate. The annotation details you could search by yourself or look into the 
-    ***AnweisungZurAnnotationGabelstapler.pdf***
-    > https://wwww.google.com It is recommened to click "save" each time one sinlge image has been annotated. By the way, more than one objects and one categories can also be annotated More tools including **Bounding box** and **Keypoints** can be used in the same time. (s. picture below) 
+    - Click one image and begin to annotate. The annotation details you could search by yourself or look into the ***AnweisungZurAnnotationGabelstapler.pdf***.
+    > https://github.com/GemueseMauer/test/blob/main/pic/Instruction%20of%20using%20COCO-Annotator.pdf
+    It is recommened to click "save" each time one sinlge image has been annotated. By the way, more than one objects and one categories can also be annotated. More tools including **Bounding box** and **Keypoints** can be used in the same time. (s. picture below) 
     ![Annotate one image](https://github.com/GemueseMauer/test/blob/main/pic/annotate_image.png)
     - If all the images are annotated, go back to the **Homepage** where you started with the coco-annotator after login, and click the **grey button "Export COCO"** on the left side of the page. It only needs clicking **"Export" button** after you see the Export window (eg. "Export Test")
     - Download the json annotation file in **"Exports"** in the same page by clicking the **green button "Download"** (s. picture below) 
