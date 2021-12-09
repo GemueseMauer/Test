@@ -1,6 +1,6 @@
 # Instruction of Data preparation and Training for trtpose
 ***Author: Qingrong Guo***
-***Date: 2021.12.03***
+***Date: 2021.12.09***
 ***Device: Laptop of the Institute***
 ---
 
@@ -48,85 +48,11 @@ The default Username and password are **probility** and **jetson**. ![Login Page
 + since all the preparation before annotation has been done, it is time to use coco-annotator to do the annotation work.
     - Click the dataset you created in the localhost in the browser (eg. **Test**). Then you will go to the similar interface where you can find the basic functions of the coco-annotator and all the images you placed in the local folder (s. picture below) 
     ![Dataset Test Starting Page](https://github.com/GemueseMauer/test/blob/main/pic/annotation%20example1.png)
-    - Click one image and begin to annotate. The annotation details you could search by yourself. It is recommened to click "save" each time one sinlge image has been annotated. By the way, more than one objects and one categories can also be annotated. More tools including **Bounding box** and **Keypoints** can be used in the same time. (s. picture below) 
+    - Click one image and begin to annotate. The annotation details you could search by yourself or look into the ***AnweisungZurAnnotationGabelstapler.pdf***.
+    > https://wwww.google.com
+    It is recommened to click "save" each time one sinlge image has been annotated. By the way, more than one objects and one categories can also be annotated. More tools including **Bounding box** and **Keypoints** can be used in the same time. (s. picture below) 
     ![Annotate one image](https://github.com/GemueseMauer/test/blob/main/pic/annotate_image.png)
-    - If all the images are annotated, go back to the **Dataset Test Starting Page** in the 1. Step and click the **grey button "Export COCO"** on the left side of the page. It only needs clicking **"Export" button** after you see the Export window (eg. "Export Test")
+    - If all the images are annotated, go back to the **Homepage** where you started with the coco-annotator after login, and click the **grey button "Export COCO"** on the left side of the page. It only needs clicking **"Export" button** after you see the Export window (eg. "Export Test")
     - Download the json annotation file in **"Exports"** in the same page by clicking the **green button "Download"** (s. picture below) 
     ![Export and download](https://github.com/GemueseMauer/test/blob/main/pic/Export.png)
 After use of the ***coco-annotator*** click the button ***ctrl + C*** in the same Terminal to end the service. The json annotation file and the images are to be used for training. Before training a model the data needs to be preprocessed.
-
-### Data preprocessing
-![Photo Name]("Photo Path")
-
-'''
-Codes
-'''
-
-```
-Codes
-```
-> https://docs.nvidia.com/isaac/isaac/packages/skeleton_pose_estimation/doc/2Dskeleton_pose_estimation.html
-
-Sheet1|Sheet2|Sheet3
-:-----|:-----:|-----:
-AlignL|AlignCT|AlignR
-
-* This is an unordered list
-* This is an unordered list
-+ This is an unordered list
-  - This is an unordered list
-  - This is an unordered list
-
-1. This is an ordered list
-2. This is an ordered list
-  2.1. This is an ordered list
-  2.2. This is an ordered list
-  2.3. This is an ordered list
-3. This is an ordered list
-
-## Part 2 -- Training
-
-```
-{'checkpoints': {'interval': 3},
- 'color_jitter': {'brightness': 0.05,
-                  'contrast': 0.05,
-                  'hue': 0.01,
-                  'saturation': 0.05},
- 'epochs': 250,
- 'lr_schedule': {'0': 0.001, '150': 1e-05, '75': 0.0001},
- 'model': {'kwargs': {'cmap_channels': 12,
-                      'num_upsample': 3,
-                      'paf_channels': 32,
-                      'upsample_channels': 256},
-           'name': 'resnet18_baseline_att'},
- 'optimizer': {'kwargs': {'lr': 0.001}, 'name': 'Adam'},
- 'stdev_schedule': {'0': 0.025},
- 'test_dataset': {'annotations_file': '/home/jetson/datapreparation/forklift_data_041121/val.json',
-                  'category_name': 'forklift',
-                  'image_shape': [224, 224],
-                  'images_dir': '/home/jetson/datapreparation/forklift_data_041121/val/forklift',
-                  'is_bmp': False,
-                  'random_angle': [-0.0, 0.0],
-                  'random_scale': [1.0, 1.0],
-                  'random_translate': [-0.0, 0.0],
-                  'stdev': 0.025,
-                  'target_shape': [56, 56]},
- 'test_loader': {'batch_size': 8,
-                 'num_workers': 8,
-                 'pin_memory': True,
-                 'shuffle': True},
- 'train_dataset': {'annotations_file': '/home/jetson/datapreparation/forklift_data_041121/train.json',
-                   'category_name': 'forklift',
-                   'image_shape': [224, 224],
-                   'images_dir': '/home/jetson/datapreparation/forklift_data_041121/train/forklift',
-                   'is_bmp': False,
-                   'random_angle': [-0.2, 0.2],
-                   'random_scale': [0.5, 2.0],
-                   'random_translate': [-0.2, 0.2],
-                   'stdev': 0.025,
-                   'target_shape': [56, 56]},
- 'train_loader': {'batch_size': 8,
-                  'num_workers': 8,
-                  'pin_memory': True,
-                  'shuffle': True}}
-```
