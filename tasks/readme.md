@@ -85,7 +85,10 @@ AlignL|AlignCT|AlignR
 3. This is an ordered list
 
 ## Part 2 -- Training
-
+Run in the terminal to see the python files for training
+```
+cd /usr/local/lib/python3.6/dist-packages/trt_pose-0.0.1-py3.6-linux-x86_64.egg/trt_pose
+```
 ```
 {'checkpoints': {'interval': 3},
  'color_jitter': {'brightness': 0.05,
